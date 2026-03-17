@@ -1,0 +1,47 @@
+--create table players(player_id int,name varchar(50),team varchar(50),role varchar(50),matches int, runs int,wickets int, strike_rate decimal(5,2),age int);
+--insert into players values --(1, 'Virat Kohli', 'RCB', 'Batsman', 237, 7263, 4, 130.50, 35),
+--(2, 'Rohit Sharma', 'MI', 'Batsman', 243, 6211, 15, 131.20, 36),
+--(3, 'MS Dhoni', 'CSK', 'Wicketkeeper', 250, 5082, 0, 135.60, 42),
+--(4, 'Hardik Pandya', 'MI', 'All-rounder', 123, 2309, 53, 145.30, 30),
+--(5, 'Ravindra Jadeja', 'CSK', 'All-rounder', 226, 2692, 152, 128.70, 35),
+--(6, 'Jasprit Bumrah', 'MI', 'Bowler', 133, 65, 165, 85.40, 30),
+--(7, 'KL Rahul', 'LSG', 'Wicketkeeper', 118, 4163, 0, 134.50, 32),
+--(8, 'Shubman Gill', 'GT', 'Batsman', 91, 2790, 0, 135.10, 25),
+--(9, 'Rashid Khan', 'GT', 'Bowler', 121, 403, 149, 150.80, 25),
+--(10, 'Andre Russell', 'KKR', 'All-rounder', 112, 2326, 96, 174.20, 35);
+--alter table players add column debut_year int;
+--alter table players add country_rank int;
+ --alter table players modify runs bigint;
+--alter table players drop country_rank;
+--alter table players rename column name to player_name;
+--update players set strike_rate=133.90 where player_id=1;
+--update players set runs=runs+200 where player_id=2;
+--delete from players where age>37;
+--update players set team='mi' where team='MI'; 
+--select *from players;--select player_name,team,runs from players;
+--select distinct team from players;
+--select distinct role from players; 
+--select *from players where runs>3000;
+--select *from players where age between 25 and 35;
+--select *from players where team='mi';
+--select *from players where team!='mi';
+--select *from players where runs>2000 and wickets>50;
+--select *from players where role='Bowler' or wickets>150;
+--select *from players order by runs desc;
+--select *from players order by strike_rate asc;
+--select *from players order by runs desc limit 5;
+--select *from players where team='mi' order by wickets asc;
+--select *from players where matches>100 order by matches asc;
+--select sum(runs) as total_runs from players;
+--select avg(strike_rate) from players;
+--select max(runs) as highest_runs from players;
+--select min(runs) as lowest_runs from players;
+--select count(*) from players;--select *from players;
+--SELECT team, SUM(runs) AS total_runs FROM players GROUP BY team;
+ --select team,avg(strike_rate) as averagestrikerate from players group by team;
+--select role,count(role) from players group by role;
+ --select team,sum(wickets) as totalwickets from players group by team;
+--select team,sum(runs) as total_runs from players group by team having runs>5000;
+--select team,count(*) from players group by role having count(*)>2;
+--select player_name,avg(strike_rate) from players group by strike_rate having strike_rate>130;
+--select *from players order by runs desc limit 1;--select *from players order by wickets desc limit 1;
