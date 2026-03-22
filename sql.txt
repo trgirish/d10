@@ -45,3 +45,20 @@
 --select team,count(*) from players group by role having count(*)>2;
 --select player_name,avg(strike_rate) from players group by strike_rate having strike_rate>130;
 --select *from players order by runs desc limit 1;--select *from players order by wickets desc limit 1;
+
+
+
+
+ -- create table employee(empid int,name varchar(150),dept varchar(125),salary int,city varchar(150));
+--INSERT INTO Employee (ID, Name, Dept, Salary, City) VALUES
+--(101, 'John', 'HR', 50000, 'New Delhi'),
+--(102, 'Robin', 'QA', 60000, 'Bangalore'),
+--(103, 'Alya', 'HR', 35000, 'Chennai'),
+--(104, 'Yusuf', 'SYS', 68000, 'Hyderabad'),
+--(105, 'Ravi', 'SYS', 62000, 'Bangalore'),
+--(106, 'Raj', 'HR', 45000, 'Chennai'),
+--(107, 'Jayant', 'SYS', 25000, 'Ranchi'),
+--(108, 'Pratik', 'OP', 35000, 'Ahmedabad'),
+--(109, 'Neil', 'HR', 25000, 'Bangalore');
+--select dept,count(name) as number_people from employee group by dept;
+--select dept,count(name) as more_emp from employee group by dept having count(name)>2
